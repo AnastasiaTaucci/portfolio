@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e9ebef;
+    height: 100%;
+} 
+
+section, footer, .banner-container {
+    position: relative;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #604d9e;
+    font-family: 'Merriweather', serif;
+}
+
+section {
+    margin-left: 30px;
+}
+
+
+/* header */
+
+nav li {
+    display: inline-block;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 1.75rem;
+    font-family: 'Merriweather', serif;
+}
+
+nav a:link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav ul {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0.9;
+}
+
+
+.social li {
+    display: inline-block;
+}
+
+header {
+    height: 100%;
+}
+
+.banner-text {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(10%);
+    z-index: 3;
+    color: #bfd6d3;
+}
+
+.banner-container {
+    height: 90%;
+    top: 10%;
+    text-align: center;
+    display: grid;
+    position: relative;
+}
+
+.image-container {
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.banner-container h1, span {
+    color: #eef0e7;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+}
+
+.banner-text h3 {
+    font-size: 1.5rem;
+    font-family: 'Mulish', sans-serif;
+    line-height: 3rem;
+}
+
+.banner-container li {
+    margin: 0 1rem;
+}
+
+
+
+/* About me */
+
+
+/*#about *{
+    border: 3px solid red;
+} */
+
+.about_me {
+    display: inline-block;
+}
+
+.about_text_container {
+    width: 70%;
+}
+
+.about_container {
+    display: flex;
+}
+
+
+#about img {
+    width: 30rem;
+    border-radius: 10px;
+    position: relative;
+    left: 2rem;
+    top: 8rem;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #1e0039;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* Skills */
+
+.skills-container li{
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+li i{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #a27eb8;
+}
+
+
+/* projects */
+
+#portfolio {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.project img {
+    width: 30%;
+}
+
+.project-title h3 {
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+summary {
+    color: #593780;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+
+/* footer */
+
+.footer-container div {
+    display: inline-block;
+    margin-left: 0.75rem;
+    font-family: 'Merriweather', serif;
+}
+
+.footer-container {
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.5);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #604d9e;
+    opacity: 1;
+}
+
+footer a:hover {
+    font-weight: 600;
+}
+
+.contact-footer {
+    color: #961a22;
+    opacity: 1;
+}
+
+
