@@ -38,6 +38,11 @@ nav li {
 nav a:link {
     color: darkblue;
     text-decoration: none;
+    transition: color 0.25s;
+}
+
+nav a:hover {
+    color: white;
 }
 
 nav ul {
@@ -62,6 +67,7 @@ nav {
 
 .social li {
     display: inline-block;
+    margin: 0 1rem;
 }
 
 header {
@@ -69,9 +75,6 @@ header {
 }
 
 .banner-text {
-    width: 65%;
-    height: 100%;
-    position: relative;
     margin: 0 auto;
     transform: translateY(10%);
     z-index: 3;
@@ -91,7 +94,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    display: flex;
 }
 
 .banner-container h1, span {
@@ -110,9 +113,7 @@ h1 {
     line-height: 3rem;
 }
 
-.banner-container li {
-    margin: 0 1rem;
-}
+
 
 
 
@@ -123,25 +124,21 @@ h1 {
     border: 3px solid red;
 } */
 
-.about_me {
-    display: inline-block;
-}
 
 .about_text_container {
-    width: 70%;
+    width: 60%;
 }
 
 .about_container {
     display: flex;
+    justify-content: space-around;
 }
 
 
-#about img {
-    width: 30rem;
-    border-radius: 10px;
-    position: relative;
-    left: 2rem;
-    top: 8rem;
+.avatar-container {
+    max-width: 30%;
+    margin: 8rem 1rem;
+    flex-shrink: 2;
 }
 
 p {
@@ -151,6 +148,10 @@ p {
     font-family: 'Mulish', sans-serif;
 }
 
+.profile-photo {
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* Skills */
 
@@ -186,6 +187,12 @@ li i{
 summary {
     color: #593780;
     font-family: 'Mulish', sans-serif;
+    transition: color 0.25s;
+}
+
+summary:hover {
+    color: #b693de;
+    cursor: pointer;
 }
 
 
@@ -211,16 +218,69 @@ summary {
 footer a {
     text-decoration: none;
     color: #604d9e;
-    opacity: 1;
+    transition: font-size 0.25s;
 }
 
 footer a:hover {
+    font-size: 1.65rem;
     font-weight: 600;
 }
 
-.contact-footer {
+footer a:active {
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.contact-footer a {
     color: #961a22;
-    opacity: 1;
 }
 
 
+/* Contact page */
+
+.contact-container {
+    height: 90%;
+    top: 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-image {
+opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.contact-text {
+    position: relative;
+    left: 40px;
+    height: 100%;
+    display: grid;
+    grid-template: 30% 20% 1fr 1fr / 50% 50%;
+    align-items: center;
+}
+
+
+
+.contact-text h2 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    font-size: 4rem;
+}
+
+.contact-text p {
+    grid-area: 3 / 1 / span 1 / span 1;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+
+.banner-contact {
+    grid-area: 4 / 1 / span 1 / span 1;
+    position: relative;
+    bottom: 20px;
+}
